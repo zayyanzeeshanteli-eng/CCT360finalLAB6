@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lab 6 - Live Weather Mood</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+
+<div class="header-box">
+<p class="eyebrow">THE WEB IN REAL TIME</p>
+<h1>Live Weather Mood</h1>
+<p class="intro">Live Mississauga weather data changes the content, visuals, and behaviour of this page.</p>
+<button id="refresh-button">Refresh Live Weather</button>
+</div>
+
+<div class="weather-card">
+
+<div class="location-box">
+<p class="small-label">CURRENT LOCATION</p>
+<h2>Mississauga, Ontario</h2>
+<p id="status">Loading live weather data...</p>
+</div>
+
+<div class="weather-values">
+<div class="value-box">
+<p class="small-label">TEMPERATURE</p>
+<p id="temperature" class="main-value">-- °C</p>
+</div>
+<div class="value-box">
+<p class="small-label">WIND SPEED</p>
+<p id="wind" class="main-value">-- km/h</p>
+</div>
+<div class="value-box">
+<p class="small-label">CLOUD COVER</p>
+<p id="clouds" class="main-value">-- %</p>
+</div>
+</div>
+
+<div class="visual-row">
+
+<div class="temperature-visual">
+<p class="small-label">DATA VISUAL 01</p>
+<h2>Temperature Level</h2>
+<div id="temperature-track">
+<div id="temperature-bar"></div>
+</div>
+<p class="visual-note">The live temperature controls the height of the bar.</p>
+</div>
+
+<div class="wind-visual">
+<p class="small-label">DATA VISUAL 02</p>
+<h2>Wind in Motion</h2>
+<div id="wind-area">
+<p id="leaf">🍃</p>
+</div>
+<p class="visual-note">The live wind speed controls how far the leaf moves.</p>
+</div>
+
+</div>
+
+<div class="recommendation-box">
+<p class="small-label">LIVE WEATHER RESPONSE</p>
+<h2 id="weather-title">Weather Recommendation</h2>
+<p id="weather-message">A recommendation will appear when the weather loads.</p>
+</div>
+
+</div>
+
+<p class="footer-note">Data retrieved from the Open-Meteo public weather API.</p>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
